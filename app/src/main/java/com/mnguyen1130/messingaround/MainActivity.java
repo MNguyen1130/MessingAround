@@ -73,12 +73,21 @@ public class MainActivity extends Activity {
 
     public void onGetNameClick(View view) {
 
-        Intent getNameScreenIntent = new Intent(this, SecondScreen.class);
+       // Intent getNameScreenIntent = new Intent(this, SecondScreen.class);
 
         final int result = 1;
 
-        getNameScreenIntent.putExtra("callingActivity", "MainActivity");
-        startActivityForResult(getNameScreenIntent, result);
+        Human bob = new Human(6.25, 185, "Bob");
+
+        Intent sendBob = new Intent(this, SecondScreen.class);
+
+        //getNameScreenIntent.putExtra("callingActivity", "MainActivity");
+
+        sendBob.putExtra("humanBob", bob);
+
+        startActivityForResult(sendBob, result);
+
+        //startActivityForResult(getNameScreenIntent, result);
 
     }
 

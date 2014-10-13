@@ -16,11 +16,15 @@ public class SecondScreen extends Activity {
 
         Intent activityThatCalled = getIntent();
 
-        String previousActivity = activityThatCalled.getExtras().getString("callingActivity");
+        //String previousActivity = activityThatCalled.getExtras().getString("callingActivity");
+
+        Human bob = (Human) activityThatCalled.getSerializableExtra("humanBob");
 
         TextView callingActivityMessage = (TextView) findViewById(R.id.calling_activity_info_text_view);
 
-        callingActivityMessage.append(" " + previousActivity);
+        //callingActivityMessage.append(" " + previousActivity);
+
+        callingActivityMessage.append("Name: " + bob.getName() + " Height: " + bob.getHeight() + "ft Weight: " + bob.getWeight() + "lbs");
     }
 
     public void onSendUsersName(View view) {

@@ -91,6 +91,12 @@ public class MainActivity extends Activity {
 
     }
 
+    public void toConversionButtonClick(View view){
+        Intent toConversionScreen = new Intent(this, Conversion.class);
+
+        startActivity(toConversionScreen);
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

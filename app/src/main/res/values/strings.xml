@@ -10,5 +10,10 @@
     <string name="button_get_it">Go Get It</string>
     <string name="users_name_sent_back">The user\'s name was </string>
     <string name="get_the_name_text_view">Go Get the Name</string>
+    <string name="title_activity_conversion">Conversion</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button_to_conversion">To Conversion</string>
+    <string name="convert_from_textview">Convert From</string>
+    <string name="default_teaspoon_value">1.0 teaspoon</string>
 
 </resources>

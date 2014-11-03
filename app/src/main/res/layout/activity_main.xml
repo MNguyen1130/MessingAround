@@ -22,6 +22,12 @@
         android:onClick="onGetNameClick"
         android:text="@string/button_get_it" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toConversionButtonClick"
+        android:text="@string/button_to_conversion"/>
+
     <TextView
         android:id="@+id/users_name_message"
         android:layout_width="wrap_content"

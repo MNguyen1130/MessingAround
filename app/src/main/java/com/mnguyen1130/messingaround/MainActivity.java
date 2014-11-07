@@ -107,4 +107,6 @@ public class MainActivity extends Activity {
 
         usersNameMessage.append(" " + nameSentBack);
     }
+
+
 }
